@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>dev.sahasrad</groupId>
+    <artifactId>comp-prog</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Competitive Programming Util</name>
+    <description>Basic competitive programming library with Data Structures, I/O, and Math operations optimized for both runtime and typing efficiency.
+    Note: External libraries are not allowed in many competitions. This library is geared toward training efficiency.</description>
+    <url>http://sahasrad.dev/comp-prog</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <developers>
+        <developer>
+            <name>Sahasrad Chippa</name>
+            <email>sahasrad@gatech.edu</email>
+            <organization>sahasrad.dev</organization>
+            <organizationUrl>sahasrad.dev</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/SahasradC/CompProg.git</connection>
+        <developerConnection>scm:git:ssh://github.com/SahasradC/CompProg.git</developerConnection>
+        <url>http://github.com/SahasradC/comp-prog</url>
+    </scm>
+</project>
