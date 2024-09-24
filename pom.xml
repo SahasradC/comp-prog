@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>Competitive Programming Util</name>
-    <description>Basic competitive programming library with Data Structures, I/O, and Math operations optimized for both runtime and typing efficiency.
+    <description>Competitive programming library for Java with Data Structures, I/O, and Math operations optimized for both runtime and typing efficiency.
     Note: External libraries are not allowed in many competitions. This library is geared toward training efficiency.</description>
     <url>http://sahasrad.dev/comp-prog</url>
 
