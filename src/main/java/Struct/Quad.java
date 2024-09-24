@@ -20,10 +20,14 @@ package Struct;
  * The {@code Quad} class stores four related objects of potentially different types.
  * This class serves as a simple container for four elements, often referred to as a quadruple or tuple.
  *
- * @param <A> the type of the first element
- * @param <B> the type of the second element
- * @param <C> the type of the third element
- * @param <D> the type of the fourth element
+ * @param <A> the type of the first element.
+ * @param <B> the type of the second element.
+ * @param <C> the type of the third element.
+ * @param <D> the type of the fourth element.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Quad<A, B, C, D> {
     /**

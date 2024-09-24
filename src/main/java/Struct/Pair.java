@@ -20,8 +20,12 @@ package Struct;
  * The {@code Pair} class stores two related objects of potentially different types.
  * It is a simple generic container for two elements, commonly known as a tuple.
  *
- * @param <A> the type of the first element in the pair
- * @param <B> the type of the second element in the pair
+ * @param <A> the type of the first element in the pair.
+ * @param <B> the type of the second element in the pair.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Pair<A, B> {
     /**

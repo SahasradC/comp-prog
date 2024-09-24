@@ -20,6 +20,10 @@ package Struct;
  * Represents a Disjoint Set Union (DSU) also known as Union-Find data structure.
  * It supports union and find operations, to determine which set a particular element
  * is in, and to unite two sets if they are disjoint.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class DSU {
     int[] parents;

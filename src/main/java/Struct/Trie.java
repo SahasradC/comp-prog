@@ -23,6 +23,10 @@ import java.util.List;
  * A Trie (or Prefix Tree) data structure implementation that supports efficient
  * insertion and search operations for strings. It optimizes space and time complexities
  * where several strings have common prefixes.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Trie {
     TrieNode root;

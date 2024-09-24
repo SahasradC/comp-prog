@@ -27,6 +27,10 @@ import java.util.StringTokenizer;
  * and supports the parsing of primitive types and strings, including array and list formats.
  *
  * Can use a custom delimiter for tokenizing input strings, but uses whitespace by default
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class In {
     private static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

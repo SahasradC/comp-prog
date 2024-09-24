@@ -26,11 +26,26 @@ import java.util.function.Function;
  * Represents a node in a binary search tree (BST) for elements of a comparable type.
  * This class provides basic BST operations including insertion and traversal.
  *
- * @param <T> The type of values stored in the BST. Must implement Comparable<T>.
+ * @param <T> The type of values stored in the BST. Must implement {@code Comparable<T>}.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class BSTNode<T extends Comparable<T>> {
+    /**
+     * This node's left child node, or null if not present.
+     */
     public BSTNode<T> left;
+
+    /**
+     * This node's right child node, or null if not present.
+     */
     public BSTNode<T> right;
+
+    /**
+     * This node's store value
+     */
     public T val;
 
     /**
@@ -142,7 +157,7 @@ public class BSTNode<T extends Comparable<T>> {
 
     /**
      * Aggregates results across the BST nodes using a preorder traversal.
-     * Uses a mapper {@link Function<BSTNode>} and accumulating {@link BiFunction<R>}
+     * Uses a mapper {@code Function<BSTNode -> R>} and accumulating {@code BiFunction<(R, R) -> R>}
      * @param initial The initial value for accumulation.
      * @param function A function to apply to each node, which generates a result of type R.
      * @param accumulator A function that combines two results of type R.
@@ -161,7 +176,7 @@ public class BSTNode<T extends Comparable<T>> {
 
     /**
      * Aggregates results across the BST nodes using an inorder traversal.
-     * Uses a mapper {@link Function<BSTNode>} and accumulating {@link BiFunction<R>}
+     * Uses a mapper {@code Function<BSTNode -> R>} and accumulating {@code BiFunction<(R, R) -> R>}
      * @param initial The initial value for accumulation.
      * @param function A function to apply to each node, which generates a result of type R.
      * @param accumulator A function that combines two results of type R.
@@ -180,7 +195,7 @@ public class BSTNode<T extends Comparable<T>> {
 
     /**
      * Aggregates results across the BST nodes using a postorder traversal.
-     * Uses a mapper {@link Function<BSTNode>} and accumulating {@link BiFunction<R>}
+     * Uses a mapper {@code Function<BSTNode -> R>} and accumulating {@code BiFunction<(R, R) -> R>}
      * @param initial The initial value for accumulation.
      * @param function A function to apply to each node, which generates a result of type R.
      * @param accumulator A function that combines two results of type R.

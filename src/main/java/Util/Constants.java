@@ -22,6 +22,10 @@ package Util;
  * for mathematical operations, and predefined direction vectors for grid operations.
  *
  * These public members are meant for the users, who are free to rewrite their values.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Constants {
 

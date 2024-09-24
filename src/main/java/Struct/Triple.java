@@ -20,9 +20,13 @@ package Struct;
  * The {@code Triple} class stores three related objects of potentially different types.
  * This is a simple generic container for three elements.
  *
- * @param <A> the type of the first element
- * @param <B> the type of the second element
- * @param <C> the type of the third element
+ * @param <A> the type of the first element.
+ * @param <B> the type of the second element.
+ * @param <C> the type of the third element.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Triple<A, B, C> {
     /**

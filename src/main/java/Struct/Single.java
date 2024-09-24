@@ -21,7 +21,11 @@ package Struct;
  * This class provides a simple way to wrap a single object in a container, allowing for
  * operations on the object like setting, getting, and string representation with custom formatting.
  *
- * @param <A> the type of the object that this class holds
+ * @param <A> the type of the object that this class holds.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Single<A> {
     /**

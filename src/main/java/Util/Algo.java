@@ -19,6 +19,16 @@ package Util;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * Provides static methods for efficient algorithmic operations
+ * like binary search and ternary search on arrays and lists. It supports operations with
+ * generic data types to compute insertion points (lower and upper bounds) or find
+ * the minimum or maximum of a convex function
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
+ */
 public class Algo {
 
     /**
@@ -97,7 +107,7 @@ public class Algo {
      * @param target The target integer to compare against.
      * @return The index of the first element in the array that is not less than the target integer.
      */
-    public static <U extends Comparable<U>> int lowerBound(int[] arr, int target) {
+    public static int lowerBound(int[] arr, int target) {
         return lowerBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -109,7 +119,7 @@ public class Algo {
      * @param target The target long to compare against.
      * @return The index of the first element in the array that is not less than the target long.
      */
-    public static <U extends Comparable<U>> int lowerBound(long[] arr, long target) {
+    public static int lowerBound(long[] arr, long target) {
         return lowerBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -121,7 +131,7 @@ public class Algo {
      * @param target The target double to compare against.
      * @return The index of the first element in the array that is not less than the target double.
      */
-    public static <U extends Comparable<U>> int lowerBound(double[] arr, double target) {
+    public static int lowerBound(double[] arr, double target) {
         return lowerBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -133,7 +143,7 @@ public class Algo {
      * @param target The target character to compare against.
      * @return The index of the first element in the array that is not less than the target character.
      */
-    public static <U extends Comparable<U>> int lowerBound(char[] arr, char target) {
+    public static int lowerBound(char[] arr, char target) {
         return lowerBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -225,7 +235,7 @@ public class Algo {
      * @param target The target integer to compare against.
      * @return The index of the first element in the array that is greater than the target integer.
      */
-    public static <U extends Comparable<U>> int upperBound(int[] arr, int target) {
+    public static int upperBound(int[] arr, int target) {
         return upperBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -237,7 +247,7 @@ public class Algo {
      * @param target The target long to compare against.
      * @return The index of the first element in the array that is greater than the target long.
      */
-    public static <U extends Comparable<U>> int upperBound(long[] arr, long target) {
+    public static int upperBound(long[] arr, long target) {
         return upperBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -249,7 +259,7 @@ public class Algo {
      * @param target The target double to compare against.
      * @return The index of the first element in the array that is greater than the target double.
      */
-    public static <U extends Comparable<U>> int upperBound(double[] arr, double target) {
+    public static int upperBound(double[] arr, double target) {
         return upperBound(0, arr.length, target, i -> arr[i]);
     }
 
@@ -261,7 +271,7 @@ public class Algo {
      * @param target The target character to compare against.
      * @return The index of the first element in the array that is greater than the target character.
      */
-    public static <U extends Comparable<U>> int upperBound(char[] arr, char target) {
+    public static int upperBound(char[] arr, char target) {
         return upperBound(0, arr.length, target, i -> arr[i]);
     }
 

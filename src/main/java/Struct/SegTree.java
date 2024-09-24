@@ -26,12 +26,16 @@ import java.util.function.Function;
  *
  * @param <T> The type of the input elements stored in the initial array.
  * @param <R> The result or operation type after applying the map and accumulation functions.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class SegTree<T, R> {
     private final BiFunction<R, R, R> accumulator;
     private final Function<T, R> mapper;
-    private int n;
-    private R[] tree;
+    private final int n;
+    private final R[] tree;
 
     /**
      * Constructs a segment tree from an array.
@@ -41,6 +45,7 @@ public class SegTree<T, R> {
      * @param individualMapper A function to convert array elements of type T to the segment type R.
      * @param accumulator A function to accumulate two segments of type R.
      */
+    @SuppressWarnings("unchecked")
     public SegTree(T[] arr, Function<T, R> individualMapper, BiFunction<R, R, R> accumulator) {
         tree = (R[]) new Object[arr.length << 2];
         this.n = arr.length;
@@ -57,6 +62,7 @@ public class SegTree<T, R> {
      * @param individualMapper A function to convert list elements of type T to the segment type R.
      * @param accumulator A function to accumulate two segments of type R.
      */
+    @SuppressWarnings("unchecked")
     public SegTree(List<T> list, Function<T, R> individualMapper, BiFunction<R, R, R> accumulator) {
         tree = (R[]) new Object[list.size() << 2];
         this.n = list.size();

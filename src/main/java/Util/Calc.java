@@ -20,6 +20,10 @@ package Util;
  * The Calc class provides a series of static methods for performing various mathematical
  * computations like modular inverses, exponentiation, factorial, combinations,
  * greatest common divisor (GCD), least common multiple (LCM), and Euler's Totient function.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Calc {
 

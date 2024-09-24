@@ -31,6 +31,10 @@ import java.util.Arrays;
  * when there an `ONLINE_JUDGE` system property is present (Codeforces, AtCoder).
  *
  * This is meant to preserve runtime over standard input {@link System#out} by flushing only once.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class Out {
     private static PrintWriter pw = new PrintWriter(System.out);
@@ -105,6 +109,7 @@ public class Out {
      *
      * @param x The object to print.
      */
+    @SuppressWarnings("all")
     public static void print(Object x) {
         if (x instanceof Object[] || x.getClass().isArray()) {
             String result = "";
@@ -143,7 +148,7 @@ public class Out {
      *
      * @param x The object to print.
      */
-    public static <T> void println(Object x) {
+    public static void println(Object x) {
         print(x);
         println();
     }

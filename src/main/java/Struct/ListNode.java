@@ -19,7 +19,12 @@ package Struct;
 /**
  * Represents a node in a doubly linked list, which can be navigated in both directions: forward and backward.
  * Each node contains a value and links to the previous and next nodes in the list.
+ *
  * @param <T> The type of the value stored in each node.
+ *
+ * @author Sahasrad Chippa
+ * @version 1.0
+ * @since 1.0
  */
 public class ListNode<T> {
     ListNode<T> prev;
