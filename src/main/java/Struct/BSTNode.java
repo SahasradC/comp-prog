@@ -60,7 +60,7 @@ public class BSTNode<T extends Comparable<T>> {
      * Adds a node to the correct position in the subtree. Uses T's compareTo method to determine
      * the correct position in the BST. Duplicate values are added to the left subtree.
      *
-     * Runs in O(log(n)) assuming the compare operation runs in O(1).
+     * Runs in {@code O(log(n))} assuming the compare operation runs in {@code O(1)}.
      * @param node The node to add.
      */
     public void add(BSTNode<T> node) {
@@ -86,7 +86,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Constructs a list of node values following preorder traversal of the BST.
      *
-     * Runs in O(n).
+     * Runs in {@code O(n)}.
      * @return The list of node values in preorder.
      */
     public List<T> toPreorderList() {
@@ -98,7 +98,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Constructs a list of node values following inorder traversal of the BST.
      *
-     * Runs in O(n).
+     * Runs in {@code O(n)}.
      * @return The list of node values in inorder.
      */
     public List<T> toInorderList() {
@@ -110,7 +110,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Constructs a list of node values following postorder traversal of the BST.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      * @return The list of node values in postorder.
      */
     public List<T> toPostorderList() {
@@ -122,7 +122,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Executes a consumer function on each node in the BST following a preorder traversal.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      * @param action The consumer function to apply to each node.
      */
     public void executePreOrder(Consumer<BSTNode<T>> action) {
@@ -134,7 +134,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Executes a consumer function on each node in the BST following an inorder traversal.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      * @param action The consumer function to apply to each node.
      */
     public void executeInOrder(Consumer<BSTNode<T>> action) {
@@ -146,7 +146,7 @@ public class BSTNode<T extends Comparable<T>> {
     /**
      * Executes a consumer function on each node in the BST following a postorder traversal.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      * @param action The consumer function to apply to each node.
      */
     public void executePostOrder(Consumer<BSTNode<T>> action) {
@@ -164,7 +164,7 @@ public class BSTNode<T extends Comparable<T>> {
      * @param <R> The result type.
      * @return The accumulated result after processing all nodes.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      */
     public <R> R accumulatePreOrder(R initial, Function<BSTNode<T>, R> function, BiFunction<R, R, R> accumulator) {
         R result = initial;
@@ -183,7 +183,7 @@ public class BSTNode<T extends Comparable<T>> {
      * @param <R> The result type.
      * @return The accumulated result after processing all nodes.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      */
     public <R> R accumulateInOrder(R initial, Function<BSTNode<T>, R> function, BiFunction<R, R, R> accumulator) {
         R result = initial;
@@ -202,7 +202,7 @@ public class BSTNode<T extends Comparable<T>> {
      * @param <R> The result type.
      * @return The accumulated result after processing all nodes.
      *
-     * Runs in O(n) assuming the provided function runs in O(1).
+     * Runs in {@code O(n)} assuming the provided function runs in {@code O(1)}.
      */
     public <R> R accumulatePostOrder(R initial, Function<BSTNode<T>, R> function, BiFunction<R, R, R> accumulator) {
         R result = initial;

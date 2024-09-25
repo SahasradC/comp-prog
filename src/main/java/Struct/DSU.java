@@ -33,7 +33,7 @@ public class DSU {
     /**
      * Initializes the DSU with n elements, each element is its own set initially.
      *
-     * Runs in O(n).
+     * Runs in {@code O(n)}.
      * @param n The total number of elements.
      */
     public DSU(int n) {
@@ -51,7 +51,7 @@ public class DSU {
      * Uses path compression to flatten the structure of the tree whenever it is used,
      * leading to very efficient queries.
      *
-     * Runs in O(α(n)), where α is the inverse Ackermann function.
+     * Runs in {@code O(α(n))}, where α is the inverse Ackermann function.
      * @param x The element to find.
      * @return The representative item of the set containing 'x'.
      */
@@ -63,7 +63,7 @@ public class DSU {
      * Unites the set that includes 'x' with the set that includes 'y'.
      * Uses union by size, ensuring the smaller set points to the representative of the larger set.
      *
-     * Runs in O(α(n)), where α is the inverse Ackermann function.
+     * Runs in {@code O(α(n))}, where α is the inverse Ackermann function.
      * @param x First element.
      * @param y Second element.
      * @return true if the union was successful and the elements were previously in different sets, false otherwise.
@@ -82,7 +82,7 @@ public class DSU {
     /**
      * Checks if the elements 'x' and 'y' are in the same set.
      *
-     * Runs in O(α(n)), where α is the inverse Ackermann function.
+     * Runs in {@code O(α(n))}, where α is the inverse Ackermann function.
      * @param x First element.
      * @param y Second element.
      * @return true if 'x' and 'y' are in the same set, false otherwise.
@@ -94,7 +94,7 @@ public class DSU {
     /**
      * Checks if all elements are part of a single set.
      *
-     * Runs in O(1).
+     * Runs in {@code O(1)}.
      * @return true if all elements are in one set, false otherwise.
      */
     public boolean fullyConnected() {

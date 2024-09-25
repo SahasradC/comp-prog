@@ -40,7 +40,7 @@ public class SegTree<T, R> {
     /**
      * Constructs a segment tree from an array.
      *
-     * Runs in O(n).
+     * Runs in {@code O(n)}.
      * @param arr An array of type T from which the segment tree will be built.
      * @param individualMapper A function to convert array elements of type T to the segment type R.
      * @param accumulator A function to accumulate two segments of type R.
@@ -57,7 +57,7 @@ public class SegTree<T, R> {
     /**
      * Constructs a segment tree from a list.
      *
-     * Runs in O(n).
+     * Runs in {@code O(n)}.
      * @param list A list of type T from which the segment tree will be built.
      * @param individualMapper A function to convert list elements of type T to the segment type R.
      * @param accumulator A function to accumulate two segments of type R.
@@ -97,18 +97,19 @@ public class SegTree<T, R> {
 
     /**
      * Queries the aggregate value over a range [l, r].
-     * Runs in O(log(n)).
+     * Runs in {@code O(log(n))}.
      *
      * @param l The left index of the range.
      * @param r The right index of the range.
      * @return The aggregated result over the range.
+     * @throws IllegalArgumentException If indexes {@code l} and {@code r} are not a valid range (where {@code 0 <= l <= r < n}).
      */
     public R query(int l, int r) {
+        if (l > r || l < 0 || r >= n) throw new IllegalArgumentException("Invalid Range: " + l + ", " + r + " for size " + n);
         return query(0, 0, n - 1, l, r);
     }
 
     private R query(int i, int cl, int cr, int l, int r) {
-        if (l > r || l < 0 || r >= n) throw new IllegalArgumentException("Invalid Range: " + l + ", " + r + " for size " + n);
         if (l == cl && r == cr) return tree[i];
         int m = (cl + cr) / 2;
         int i1 = i * 2 + 1, i2 = i1 + 1;
@@ -125,7 +126,7 @@ public class SegTree<T, R> {
 
     /**
      * Updates the value at a specific index.
-     * Runs in O(log(n)).
+     * Runs in {@code O(log(n))}.
      *
      * @param index The index to update.
      * @param val The new value of type T.

@@ -67,13 +67,13 @@ public class Out {
     /**
      * Sets the output to a file with the specified filename.
      * @param fileName The name of the file to write output to.
-     * @throws RuntimeException if the file cannot be found or created.
+     * @throws IllegalArgumentException if a file with {@code fileName} cannot be found or created.
      */
     public static void setOutputFile(String fileName) {
         try {
             pw = new PrintWriter(fileName);
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new IllegalArgumentException(e);
         }
     }
 

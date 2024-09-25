@@ -35,7 +35,7 @@ public class Algo {
      * Performs a parameterized binary search to find the smallest index where the target is not greater,
      * comparing using a provided function.
      *
-     * Runs in O(log(n)) time assuming the provided function runs in O(1).
+     * Runs in {@code O(log(n))} time assuming the provided function runs in {@code O(1)}.
      * @param l The left boundary of the search interval (inclusive).
      * @param r The right boundary of the search interval (exclusive).
      * @param target The target element to search for.
@@ -62,7 +62,7 @@ public class Algo {
      * Performs a parameterized binary search using long indices to find the smallest index where the target
      * is not greater, comparing using a provided function.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary of the search interval (inclusive).
      * @param r The right boundary of the search interval (exclusive).
      * @param target The target element to search for.
@@ -89,7 +89,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array that is not less than the target value using a lower bound binary search algorithm.
      *
-     * Runs in O(log(n)) time assuming the compare operation runs in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation runs in {@code O(1)}.
      * @param arr The sorted array of comparable elements.
      * @param target The target value to compare against.
      * @param <U> The type of elements in the array, which extends Comparable.
@@ -102,7 +102,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array of integers that is not less than the target integer.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of integers.
      * @param target The target integer to compare against.
      * @return The index of the first element in the array that is not less than the target integer.
@@ -114,7 +114,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array of longs that is not less than the target long.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of longs.
      * @param target The target long to compare against.
      * @return The index of the first element in the array that is not less than the target long.
@@ -126,7 +126,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array of doubles that is not less than the target double.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of doubles.
      * @param target The target double to compare against.
      * @return The index of the first element in the array that is not less than the target double.
@@ -138,7 +138,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array of characters that is not less than the target character.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of characters.
      * @param target The target character to compare against.
      * @return The index of the first element in the array that is not less than the target character.
@@ -150,7 +150,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted list of comparable elements that is not less than the target value using a lower bound binary search algorithm.
      *
-     * Runs in O(log(n)) time assuming the compare operation runs in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation runs in {@code O(1)}.
      * @param list The sorted list of comparable elements.
      * @param target The target value to compare against.
      * @param <U> The type of elements in the list, which extends Comparable.
@@ -164,7 +164,7 @@ public class Algo {
      * Finds the index of the first element greater than the target using a custom function mapping integers
      * to comparable items. This is a generic implementation of an upper bound binary search algorithm.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary of the search interval (inclusive).
      * @param r The right boundary of the search interval (exclusive).
      * @param target The target value to find the upper bound for.
@@ -190,7 +190,7 @@ public class Algo {
     /**
      * Performs a binary search to find the upper bound (index of first element greater than the target) in a wider range specified using long indices.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary of the search interval (inclusive).
      * @param r The right boundary of the search interval (exclusive).
      * @param target The target value to compare against.
@@ -217,7 +217,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted array that is greater than the target using an upper bound binary search algorithm.
      *
-     * Runs in O(log(n)) time assuming the compare operation runs in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation runs in {@code O(1)}.
      * @param arr The sorted array of comparable elements.
      * @param target The target value to compare against.
      * @param <U> The type of elements in the array, which extends Comparable.
@@ -230,7 +230,7 @@ public class Algo {
     /**
      * Finds the index of the first element in the sorted array of integers that is greater than the target integer.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of integers.
      * @param target The target integer to compare against.
      * @return The index of the first element in the array that is greater than the target integer.
@@ -242,7 +242,7 @@ public class Algo {
     /**
      * Finds the index of the first element in the sorted array of longs that is greater than the target long.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of longs.
      * @param target The target long to compare against.
      * @return The index of the first element in the array that is greater than the target long.
@@ -254,7 +254,7 @@ public class Algo {
     /**
      * Finds the index of the first element in the sorted array of doubles that is greater than the target double.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of doubles.
      * @param target The target double to compare against.
      * @return The index of the first element in the array that is greater than the target double.
@@ -266,7 +266,7 @@ public class Algo {
     /**
      * Finds the index of the first element in the sorted array of characters that is greater than the target character.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param arr The sorted array of characters.
      * @param target The target character to compare against.
      * @return The index of the first element in the array that is greater than the target character.
@@ -278,7 +278,7 @@ public class Algo {
     /**
      * Finds the index of the first element in a sorted list that is greater than the target using an upper bound binary search algorithm.
      *
-     * Runs in O(log(n)) time assuming the compare operation runs in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation runs in {@code O(1)}.
      * @param list The sorted list of comparable elements.
      * @param target The target value to compare against.
      * @param <U> The type of elements in the list, which extends Comparable.
@@ -291,7 +291,7 @@ public class Algo {
     /**
      * Performs a ternary search on an integer range to find a local minimum point in a convex or unimodal function.
      *
-     * Runs in O(log(n)) time.
+     * Runs in {@code O(log(n))} time.
      * @param l The left boundary index (inclusive).
      * @param r The right boundary index (inclusive).
      * @param function A function that maps an integer to a comparable item type U.
@@ -323,7 +323,7 @@ public class Algo {
     /**
      * Performs a ternary search on an integer range to find a local maximum point in a convex or unimodal function.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary index (inclusive).
      * @param r The right boundary index (inclusive).
      * @param function A function that maps an integer to a comparable item type U.
@@ -355,7 +355,7 @@ public class Algo {
     /**
      * Performs a ternary search on a long range to find a local minimum point in a convex or unimodal function.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary index (inclusive).
      * @param r The right boundary index (inclusive).
      * @param function A function that maps a long index to a comparable item type U.
@@ -388,7 +388,7 @@ public class Algo {
     /**
      * Performs a ternary search on a long range to find a local maximum point in a convex or unimodal function.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary index (inclusive).
      * @param r The right boundary index (inclusive).
      * @param function A function that maps a long index to a comparable item type U.
@@ -450,7 +450,7 @@ public class Algo {
      * The {@link #error} defines how close the algorithm needs to approach the minimal value before stopping.
      * Smaller values of {@link #error} increase the precision but also increase computational demand.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary value (inclusive).
      * @param r The right boundary value (inclusive).
      * @param function A function that maps a double to a comparable item type U.
@@ -486,7 +486,7 @@ public class Algo {
      * The {@link #error} defines how close the algorithm needs to approach the maximal value before stopping.
      * Smaller values of {@link #error} increase the precision but also increase computational demand.
      *
-     * Runs in O(log(n)) time assuming the compare operation and provided function run in O(1).
+     * Runs in {@code O(log(n))} time assuming the compare operation and provided function run in {@code O(1)}.
      * @param l The left boundary value (inclusive).
      * @param r The right boundary value (inclusive).
      * @param function A function that maps a double to a comparable item type U.

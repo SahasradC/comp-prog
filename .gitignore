@@ -12,6 +12,9 @@ target/
 ### Maven ###
 settings.xml
 
+### Local Tests ###
+src/test/
+
 ### Eclipse ###
 .apt_generated
 .classpath

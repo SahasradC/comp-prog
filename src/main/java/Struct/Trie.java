@@ -105,10 +105,10 @@ public class Trie {
     /**
      * Inserts a word into the Trie. If any character in the word is out of the allowed range,
      * it throws an exception.
-     * Runs in O(m) where m is the length of the word.
+     * Runs in {@code O(m)} where m is the length of the word.
      *
      * @param word A sequence of characters representing the word to insert.
-     * @throws RuntimeException If an invalid character is encountered.
+     * @throws IllegalArgumentException If an invalid character is in the input String.
      */
     public void insert(CharSequence word) {
         TrieNode curr = root;
@@ -116,11 +116,11 @@ public class Trie {
         for (int i = 0; i < len; i++) {
             int j = word.charAt(i) - offset;
             if (j < 0 || j >= map.length) {
-                throw new RuntimeException("Inserted Invalid character: " + word.charAt(i));
+                throw new IllegalArgumentException("Inserted Invalid character: " + word.charAt(i));
             }
             int c = map[j];
             if (c < 0) {
-                throw new RuntimeException("Inserted Invalid character: " + word.charAt(i));
+                throw new IllegalArgumentException("Inserted Invalid character: " + word.charAt(i));
             }
             if (curr.children[c] == null) {
                 curr.children[c] = new TrieNode();
@@ -132,7 +132,7 @@ public class Trie {
 
     /**
      * Checks if a word is in the Trie.
-     * Runs in O(m) where m is the length of the word.
+     * Runs in {@code O(m)} where m is the length of the word.
      *
      * @param word The word to check.
      * @return true if the Trie contains the word, false otherwise.

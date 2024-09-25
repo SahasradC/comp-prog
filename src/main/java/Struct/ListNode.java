@@ -72,7 +72,7 @@ public class ListNode<T> {
      * Creates a string representation of all values from this node forwards until the list end.
      * Uses default formatting with brackets and commas.
      *
-     * Runs in O(n) time.
+     * Runs in {@code O(n)} time.
      * @return A formatted string of node values forwards.
      */
     public String forwardString() {
@@ -83,7 +83,7 @@ public class ListNode<T> {
      * Creates a string representation of all values from this node backwards until the list start.
      * Uses default formatting with brackets and commas.
      *
-     * Runs in O(n) time.
+     * Runs in {@code O(n)} time.
      * @return A formatted string of node values backwards.
      */
     public String backwardString() {
@@ -93,7 +93,7 @@ public class ListNode<T> {
     /**
      * Generates a string from this node values moving forward, formatted with specified delimiters.
      *
-     * Runs in O(n) time.
+     * Runs in {@code O(n)} time.
      * @param prefix The prefix to start the list representation.
      * @param delim The delimiter to separate node values.
      * @param suffix The suffix to end the list representation.
@@ -116,7 +116,7 @@ public class ListNode<T> {
     /**
      * Generates a string from this node values moving backward, formatted with specified delimiters.
      *
-     * Runs in O(n) time.
+     * Runs in {@code O(n)} time.
      * @param prefix The prefix to start the list representation.
      * @param delim The delimiter to separate node values.
      * @param suffix The suffix to end the list representation.

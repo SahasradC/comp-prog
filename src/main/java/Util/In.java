@@ -20,6 +20,7 @@ import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
 /**
@@ -66,27 +67,27 @@ public class In {
     /**
      * Sets the input source to a file via its filename.
      * @param fileName The name of the file to read from.
-     * @throws RuntimeException if the file is not found.
+     * @throws IllegalArgumentException if a file with {@code fileName} cannot be found.
      */
     public static void setFileInput(String fileName) {
         try {
             br = new BufferedReader(new FileReader(fileName));
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new IllegalArgumentException(e);
         }
     }
 
     /**
      * Reads the next token from input.
      * @return The next token as a String
-     * @throws RuntimeException if no more tokens are available or an error occurs.
+     * @throws NoSuchElementException if no more tokens are available or an error occurs.
      */
     public static String next() {
         if (curr == null || !curr.hasMoreTokens()) {
             try {
                 curr = new StringTokenizer(br.readLine(), delim);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (IOException | NullPointerException e) {
+                throw new NoSuchElementException(e.getMessage());
             }
         }
         String result = curr.nextToken();
