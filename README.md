@@ -14,7 +14,7 @@ Must be compatible with the Maven Central Repo. Examples for Maven and Gradle ar
 implementation group: 'dev.sahasrad', name: 'comp-prog', version: '1.0.1'
 ```
 ## Option 2: Download and Extract ZIP
-A ZIP file of the dependency JARs is provided for the latest __release__.
+A ZIP file of the dependency JARs is provided for the latest [release](https://github.com/SahasradC/comp-prog/releases).
 
 Extract comp-prog-VERSION.zip and add the created comp-prog-VERSION folder as a project library in your IDE.
 
